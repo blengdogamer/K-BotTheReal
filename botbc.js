@@ -327,10 +327,6 @@ if(!message.guild.member(client.user).hasPermission("MANAGE_MESSAGES")) return m
 
 });
 
-    
-      
-
-});
 
 
 //membersstatus
