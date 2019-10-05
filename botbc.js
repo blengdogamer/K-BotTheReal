@@ -105,26 +105,7 @@ client.on('message', message => {
 }
 });
 
-//joinorleaveserverbot
-
-client.on('guildCreate', guild => {
-   
-  client.channels.get("518350655056904202")
-const embed = new Discord.RichEmbed()
-   .setAuthor(`.K-Bot Joined a Server ✅`)
-   .setDescription(`**
-Server name: __${guild.name}__
-Server id: __${guild.id}__
-Server owner: __${guild.owner}__
-Member Count: __${guild.memberCount}__
-Servers Counter : __${client.guilds.size}__**`)
-         .setColor("#f3ae10")
-         .addField("New Server!")
-         .setFooter('! K-Bot , ء' , client.user.avatarURL)
-           client.channels.get("564799205105991701").send({embed}); //Sup
-}
- 
-);
+//joinorleaveserverbo
 
 client.on('guildDelete', guild => {
   client.channels.get("518350655056904202")
