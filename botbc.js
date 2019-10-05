@@ -105,24 +105,7 @@ client.on('message', message => {
 }
 });
 
-//joinorleaveserverbo
-
-client.on('guildDelete', guild => {
-  client.channels.get("518350655056904202")
-const embed = new Discord.RichEmbed()
-   .setAuthor(`.K-Bot left a server ❎`)
-   .setDescription(`**
-Server name: __${guild.name}__
-Server id: __${guild.id}__
-Server owner: __${guild.owner}__
-Members Count: __${guild.memberCount}__
-Servers Counter : __${client.guilds.size}__**`)
-         .setColor("#f3ae10")
-         .setFooter('! K-Bot , ء' , client.user.avatarURL)
-           client.channels.get("564799205105991701").send({embed});
-}
- 
-);
+//joinorleaveserverb
 
 //kick
 client.on('message', message => {
